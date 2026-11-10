@@ -76,3 +76,22 @@ integrations/windsurf/.windsurfrules
 integrations/openclaw/*
 integrations/qwen/agents/
 !integrations/openclaw/README.md
+
+# Added by the Mac->Linux transfer (2026-11-10): secrets, data dumps and build output never go to git.
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.pem
+*.key
+*.p12
+*.dump
+*.sql.gz
+*.bak.sql
+.next/
+.netlify/
+.vercel/
+.turbo/
+*.tsbuildinfo
+${CLAUDE_PLUGIN_DATA}/
